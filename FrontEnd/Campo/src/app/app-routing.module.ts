@@ -3,11 +3,14 @@ import { RouterModule, Routes, Router } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+import { PayanComponent } from "./payan/payan.component";
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: '', component: HomeComponent },
+  { path: '', component: PayanComponent },
   { path: 'usuarios', component: UsuariosComponent },
+  { path: 'pay', component: PayanComponent },
+
 
   { path: '**', redirectTo: '' }
 ];

@@ -79,13 +79,15 @@ import { AlifeFileToBase64Module } from 'alife-file-to-base64';
 import { HomeComponent } from './home/home.component';
 
 import { UsuariosComponent } from './usuarios/usuarios.component';
+import { PayanComponent,DialogElement } from './payan/payan.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     GroupByPipe,
     HomeComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    PayanComponent,DialogElement
   ],
   imports: [FormsModule,
     BreadcrumbModule,

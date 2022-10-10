@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  apiService: 'http://127.0.0.1:3000/api/productos',
+  apiService: 'http://localhost:3000/api/productos'
   
   
 };

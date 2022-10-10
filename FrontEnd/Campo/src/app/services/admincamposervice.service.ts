@@ -12,10 +12,12 @@ export class adminCampoService {
 
 //Consumo de apis a servidores internos
   public getProductosAll(){
-    console.log(environment.apiService+'/all' );
+  //  console.log(environment.apiService+'/all' );
     
     return this.http.get(environment.apiService );
   }
+
+
   public getProductosbyid(vId :any){
     console.log(environment.apiService+'/byid/'+vId);
     
@@ -23,4 +25,25 @@ export class adminCampoService {
   }
 
 
+
+  /**
+   * name
+   */
+  public usuariosphp() {
+    var url = "http://192.168.10.203/apiadmin/admin";
+    return this.http.get(url).toPromise();
+  }
+
+
+
+  productosall(){
+    var url = "http://192.168.10.214/apicampo/api/productos/";
+    return this.http.get(url).toPromise();
+  }
+
+
+  productoid(pid:number){
+ var url =`http://192.168.10.214/apicampo/api/productos/${pid}`;
+    return this.http.get(url).toPromise();
+  }
 }

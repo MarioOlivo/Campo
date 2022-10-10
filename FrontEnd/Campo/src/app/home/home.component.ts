@@ -33,6 +33,9 @@ export class HomeComponent implements OnInit {
   }
   async getProductosAll(){
         this.productos = await this.service.getProductosAll().toPromise();
+
+        console.log(this.productos);
+        
    // return this.productos;
 
   }
